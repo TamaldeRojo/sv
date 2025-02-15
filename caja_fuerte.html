@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosito</title>
+    <link rel="icon" href="img/liston.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="background-color:aquamarine;">
+    <!-- Contenedor de la caja fuerte -->
+    <audio id="musica" src="sound/butterfly.mp3" loop></audio>
+<div>
+       
+ 
+</div>
+  
+    <!-- Sección del contador (oculta inicialmente) -->
+    <div id="seccion-contador" class="seccion-contador">
+        <!-- Cabecera -->
+        <div class="cabecera">
+            <img src="./img/marybb.jpg"
+                alt="" class="imagen-cabecera">
+            <div class="titulo-cabecera">
+                <h1>Nuestro tiempo vos y yo ❤</h1>
+            </div>
+        </div>
+
+        <div class="contador">
+            <div class="linea-tiempo" id="linea-superior">
+                <span id="anos">0</span>AÑOS
+                <span id="meses">0</span>MESES
+            </div>
+
+            <div class="linea-tiempo" id="linea-inferior">
+                <div class="unidad-tiempo">
+                    <span id="dias">0</span>
+                    <p>Dias</p>
+                </div>
+
+                <div class="unidad-tiempo">
+                    <span id="horas">0</span>
+                    <p>Horas</p>
+                </div>
+
+                <div class="unidad-tiempo">
+                    <span id="minutos">0</span>
+                    <p>Minutos</p>
+                </div>
+
+                <div class="unidad-tiempo">
+                    <span id="segundos">0</span>
+                    <p>Segundos</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="boton-contador" onclick="mostrarGaleria()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
+                fill="none">
+                <path
+                    d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg> Tú & Yo <br>
+        </button>
+    </div>
+
+  
+    <div id="seccion-galeria" class="seccion-galeria">
+        <!-- Título de la galería -->
+        <div class="titulo-galeria">
+            <h1>FOTOS LINDAS QUE NOS REPRESENTAN</h1>
+            <small>Un poco al azar ok?</small>
+        </div>
+
+        <!-- Contenedor de las fotos -->
+        <div class="fotos">
+            <img src="./img/c.png" alt="Foto 1">
+            <img src="./img/pe.png" alt="Foto 2">
+            <img src="./img/ha.png" alt="Foto 3">
+            <img src="./img/image12.jpg" alt="Foto 4">
+            <img src="./img/lym.png" alt="Foto 5">
+            <img src="./img/asd.png" alt="Foto 6">
+            <img src="./img/Untitled2.jpg" alt="Foto 7">
+            <img src="./img/popis.png" alt="Foto 8">
+            <img src="./img/papel.png" alt="Foto 9">
+        </div>
+
+        <!-- Botón para ir a la carta -->
+        <button class="boton-transparente boton-contador" onclick="mostrarCarta()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#d1548f"
+                fill="none">
+                <path
+                    d="M5.00035 7L3.78154 7.81253C2.90783 8.39501 2.47097 8.68625 2.23422 9.13041C1.99747 9.57457 1.99923 10.0966 2.00273 11.1406C2.00696 12.3975 2.01864 13.6782 2.05099 14.9741C2.12773 18.0487 2.16611 19.586 3.29651 20.7164C4.42691 21.8469 5.98497 21.8858 9.10108 21.9637C11.0397 22.0121 12.9611 22.0121 14.8996 21.9637C18.0158 21.8858 19.5738 21.8469 20.7042 20.7164C21.8346 19.586 21.873 18.0487 21.9497 14.9741C21.9821 13.6782 21.9937 12.3975 21.998 11.1406C22.0015 10.0966 22.0032 9.57456 21.7665 9.13041C21.5297 8.68625 21.0929 8.39501 20.2191 7.81253L19.0003 7"
+                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                <path
+                    d="M2 10L8.91302 14.1478C10.417 15.0502 11.169 15.5014 12 15.5014C12.831 15.5014 13.583 15.0502 15.087 14.1478L22 10"
+                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                <path
+                    d="M4.99998 12V6C4.99998 4.11438 4.99998 3.17157 5.58577 2.58579C6.17156 2 7.11437 2 8.99998 2H15C16.8856 2 17.8284 2 18.4142 2.58579C19 3.17157 19 4.11438 19 6V12"
+                    stroke="currentColor" stroke-width="1.5" />
+                <path
+                    d="M9.76122 6.27615C10.5657 5.81923 11.2679 6.00336 11.6897 6.29667C11.8626 6.41693 11.9491 6.47706 12 6.47706C12.0509 6.47706 12.1373 6.41693 12.3103 6.29667C12.7321 6.00336 13.4343 5.81923 14.2388 6.27615C15.2946 6.87582 15.5335 8.85412 13.0981 10.5232C12.6343 10.8411 12.4023 11 12 11C11.5976 11 11.3657 10.8411 10.9018 10.5232C8.4665 8.85412 8.70541 6.87582 9.76122 6.27615Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+            Ver Carta
+        </button>
+        <!-- Botón para volver -->
+        <button class="boton-transparente boton-contador" onclick="mostrarContador()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#d1548f"
+                fill="none">
+                <path
+                    d="M12.0027 21C7.28739 21 4.92973 21 3.46487 19.5355C2 18.0711 2 15.714 2 11V7.94427C2 6.1278 2 5.21956 2.38042 4.53806C2.6516 4.05227 3.05255 3.65142 3.53848 3.38032C4.22017 3 5.12865 3 6.94562 3C8.10968 3 8.69172 3 9.20122 3.19101C10.3645 3.62712 10.8442 4.68358 11.3691 5.73313L12.0027 7M8.00163 7H16.754C18.8613 7 19.9149 7 20.6718 7.50559C20.9995 7.72447 21.2808 8.00572 21.4997 8.33329C21.8937 8.92282 21.9808 9.69244 22 11"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <path
+                    d="M20.586 13.331C18.7898 12.3795 17.5 13.7821 17.5 13.7821C17.5 13.7821 16.2102 12.3795 14.4139 13.331C12.2383 14.4834 12.0821 18.9964 17.5 21C22.9179 18.9964 22.7616 14.4834 20.586 13.331Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Volver
+        </button>
+    </div>
+
+    <div id="seccion-carta" class="seccion-carta">
+        <!-- Título de la carta -->
+        <div class="titulo-carta">
+            <h1>Te Amo Pequeña, eres lo más hermoso que tengo</h1>
+        </div>
+
+        <!-- Contenido de la carta -->
+        <div class="contenido-carta">
+            <p>
+                Para la dueña de mí corazón ❤<br><br>
+                Espero este pequeño detalle sea de tu agrado, desde que estoy a tu lado mí vida ha sido muy diferente y mucho más divertida, eres la luz de mis días y el color de mis ojos, 
+                gracias por amarme tanto como te amo de vuelta.
+
+                <br>
+                La frase del inicio te la puse porque es un recordatorio que a mi me gusta mucho tener en la cabeza, sobre lo hermosa que puede ser la vida, y cada vez que te escucho, veo y comparto tiempo 
+                contigo me das el coraje de afrontar las peores adversidades de la vida, algo que yo quiero compartir contigo y motivarte a que te sientas de la misma manera. Quiero estar junto a ti y 
+                ser alguien que mereces, quiero compartir mi vida contigo y quiero sobre todo vivir contigo.
+
+                
+                
+                <br>
+                <br>
+                Con mucho cariño, tu novio que tanto te ama
+            </p>
+        </div>
+
+        <!-- Botón para volver a la galería -->
+        <button class="boton-transparente boton-contador" onclick="mostrarGaleria()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#d1548f"
+                fill="none">
+                <path
+                    d="M12.0027 21C7.28739 21 4.92973 21 3.46487 19.5355C2 18.0711 2 15.714 2 11V7.94427C2 6.1278 2 5.21956 2.38042 4.53806C2.6516 4.05227 3.05255 3.65142 3.53848 3.38032C4.22017 3 5.12865 3 6.94562 3C8.10968 3 8.69172 3 9.20122 3.19101C10.3645 3.62712 10.8442 4.68358 11.3691 5.73313L12.0027 7M8.00163 7H16.754C18.8613 7 19.9149 7 20.6718 7.50559C20.9995 7.72447 21.2808 8.00572 21.4997 8.33329C21.8937 8.92282 21.9808 9.69244 22 11"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <path
+                    d="M20.586 13.331C18.7898 12.3795 17.5 13.7821 17.5 13.7821C17.5 13.7821 16.2102 12.3795 14.4139 13.331C12.2383 14.4834 12.0821 18.9964 17.5 21C22.9179 18.9964 22.7616 14.4834 20.586 13.331Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Volver a la Galería
+        </button>
+    </div>
+
+<style>
+/* Estilos para la galería y modal */
+.fotos img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.fotos img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos del modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90vh;
+}
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #d1548f;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+
+<script>
+// Funciones para el modal
+function openModal(img) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    modal.style.display = "block";
+    modalImg.src = img.src;
+}
+
+function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+}
+
+// Cerrar modal al hacer clic fuera de la imagen
+window.onclick = function(event) {
+    const modal = document.getElementById("imageModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Cerrar modal con la tecla ESC
+document.addEventListener('keydown', function(event) {
+    if (event.key === "Escape") {
+        document.getElementById("imageModal").style.display = "none";
+    }
+});
+</script>
+    <script src="script.js"></script>
+    <script>
+  
+function initializeAudioSafe() {
+    const musica = document.getElementById("musica");
+    
+
+    const savedTime = localStorage.getItem('audioTime');
+    if (savedTime) {
+        musica.currentTime = parseFloat(savedTime);
+    }
+    
+  
+    setInterval(() => {
+        localStorage.setItem('audioTime', musica.currentTime);
+    }, 1000);
+    
+
+    musica.addEventListener('ended', function() {
+        musica.currentTime = 0;
+        musica.play();
+    });
+    
+
+    document.addEventListener("click", function() {
+        musica.play().catch(function(error) {
+            console.log("Error al reproducir audio:", error);
+        });
+    }, { once: true });
+    
+    musica.play().catch(function(error) {
+        console.log("Reproducción automática bloqueada:", error);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", initializeAudioSafe);
+
+
+window.addEventListener('beforeunload', function() {
+    const musica = document.getElementById("musica");
+    localStorage.setItem('audioTime', musica.currentTime);
+});
+        </script>
+</body>
+
+</html>
